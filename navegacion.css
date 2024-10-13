@@ -1,0 +1,186 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+   color: #fff;
+   background: linear-gradient(rgb(184, 147, 106), rgba(68, 67, 67, 0.438));
+   font-family: "Poppins", sans-serif;
+}
+/* menu de navegacion*/
+header, nav{
+    background-color:  rgb(4, 57, 39);
+}
+  
+nav{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    display: flex; 
+    justify-content: space-between;
+}
+
+li{
+    background: rgb(10, 95, 67);
+    padding: 20px;
+    margin: 5px;   
+}
+
+li:hover{
+    background-color:rgb(0, 168, 107); 
+}
+a {
+   
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#jojo{
+  
+    /*background-color: rgb(255, 255, 149);*/
+}
+#yaya{
+  
+   /* background-color: rgb(115, 221, 115);*/
+}
+#gaga{
+   
+   /* background-color: rgb(226, 235, 149);*/
+}
+
+
+
+/*Cuerpo principal*/
+
+
+main{
+    font-size: 25px;
+    padding:50px 30px;
+   
+}
+
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:40px ;
+    margin: 3% 3% 0% 3%;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: bold;
+    color: #000000;
+}
+
+p{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 26px;
+ text-align: center;
+ color: #121111;
+ opacity: 0.8;
+}
+
+/*contenedor de imagenes con slider*/
+
+.contenedorimg{
+    max-width: 800px;
+    max-height: 420px;
+    margin: 0 auto;
+    overflow: hidden  ;
+    position: relative;
+    box-shadow: 1px 1px 3px 0px rgb(1, 1, 1);
+}
+
+.contimgflex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation-name: moverimg;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.botonav{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(248, 247, 247);
+    display: none;
+}
+
+.imgs{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+ 
+}
+
+@keyframes moverimg{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/* uso de sumary*/
+.faq{
+    margin:;
+    padding: 30px 70px ;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(202, 94, 5, 0.726), rgba(112, 54, 5, 0.726));
+
+}
+summary{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+ 
+.lol{
+    margin: 0 ;
+    border: 2px solid rgb(202, 177, 37);
+    height: 100px;
+    width: 100px;
+}
+
+.ik{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 30px 0;
+    color: #fff;
+}
+
+footer{
+    background-color:  rgb(4, 57, 39);
+}
+
+@media (width<600px) {
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 40px;
+    }
+}
